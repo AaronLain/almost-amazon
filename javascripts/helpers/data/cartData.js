@@ -3,7 +3,7 @@ import book from '../data/bookdata.js'
 const cart = [];
 
 const setCart = (book) => {
-    cart.push(book.book);
+    cart.push(book);
 }
 
 const getCart = () => {

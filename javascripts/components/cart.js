@@ -1,6 +1,11 @@
 import util from '../helpers/util.js'
 import cartData from '../helpers/data/cartData.js'
 
+const addToCart = (newBook) => {
+    cartData.setCart(newBook);
+    cartToDom();
+}
+
 const cartToDom = () => {
     const myCart = cartData.getCart();
     let domString = ''
@@ -10,10 +15,6 @@ const cartToDom = () => {
     util.printToDom('cart-container', domString);
 };
 
-const addToCart = (newBook) => {
-    cartData.setCart(newBook);
-    cartToDom();
-}
 
 export default { addToCart }
     
