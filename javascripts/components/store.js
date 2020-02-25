@@ -11,9 +11,10 @@ const makeStore = () => {
 };
 
 const addToCartEvent = () => {
-    let domString = ''
-    domString += `<h2>${book.name} is in the cart</h2>`
-    util.printToDom('cart-container', domString);
+    console.log('you clicked add to cart')
+    //let domString = ''
+    //domString += `<h3>${book.name} is in the cart</h3>`
+    //util.printToDom('cart-container', domString);
 };
 
 export default { makeStore };
